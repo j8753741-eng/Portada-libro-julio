@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>✦ Donde Siempre Vuelve Mi Corazón ✦</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+min-height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+padding:40px;
+
+overflow:hidden;
+
+font-family:'Cormorant Garamond',serif;
+
+background:
+radial-gradient(circle at center,#604123 0%,#3b2616 40%,#1d120b 70%,#0f0906 100%);
+
+}
+
+/* Vetas de madera */
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+inset:0;
+
+background:
+
+repeating-linear-gradient(
+90deg,
+rgba(255,255,255,.015),
+rgba(255,255,255,.015) 3px,
+transparent 3px,
+transparent 90px);
+
+opacity:.45;
+
+}
+
+/* Luz cálida */
+
+body::after{
+
+content:"";
+
+position:fixed;
+
+width:900px;
+height:900px;
+
+border-radius:50%;
+
+background:
+
+radial-gradient(circle,
+rgba(255,225,165,.18),
+transparent 70%);
+
+filter:blur(40px);
+
+}
+
+/* LIBRO */
+
+.book{
+
+position:relative;
+
+width:min(900px,95vw);
+
+padding:28px;
+
+border-radius:20px;
+
+background:
+
+linear-gradient(145deg,#5b311d,#3b1f11);
+
+border:8px solid #a87b43;
+
+box-shadow:
+
+0 35px 80px rgba(0,0,0,.65);
+
+}
+
+/* Textura cuero */
+
+.book::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+border-radius:12px;
+
+background:
+
+radial-gradient(rgba(255,255,255,.04) 1px,transparent 1px);
+
+background-size:16px 16px;
+
+opacity:.35;
+
+}
+
+/* Esquinas */
+
+.corner{
+
+position:absolute;
+
+font-size:52px;
+
+color:#d9b66c;
+
+opacity:.8;
+
+}
+
+.c1{top:18px;left:20px;}
+.c2{top:18px;right:20px;transform:rotate(90deg);}
+.c3{bottom:18px;left:20px;transform:rotate(-90deg);}
+.c4{bottom:18px;right:20px;transform:rotate(180deg);}
+
+/* Contenido */
+
+.cover{
+
+padding:90px 70px;
+
+border:2px solid rgba(230,193,117,.35);
+
+position:relative;
+
+text-align:center;
+
+}
+
+/* Líneas decorativas */
+
+.line{
+
+width:220px;
+height:2px;
+
+background:linear-gradient(to right,
+transparent,
+#d8b56c,
+transparent);
+
+margin:25px auto;
+
+}
+
+/* Título */
+
+.book-title{
+
+font-family:'Cinzel',serif;
+
+font-size:3rem;
+
+line-height:1.4;
+
+letter-spacing:2px;
+
+color:#f6de9f;
+
+text-shadow:
+
+0 2px 0 #7c5728,
+0 0 18px rgba(245,213,145,.25);
+
+margin-bottom:18px;
+
+}
+
+.subtitle{
+
+font-family:'Great Vibes',cursive;
+
+font-size:2rem;
+
+color:#f0d9a4;
+
+margin-top:10px;
+
+}
+
+.dedication{
+
+margin-top:60px;
+
+font-size:1.45rem;
+
+line-height:2;
+
+color:#efd8b2;
+
+max-width:650px;
+
+margin-left:auto;
+margin-right:auto;
+
+}
+
+
+.author{
+
+margin-top:55px;
+
+font-family:'Great Vibes',cursive;
+
+font-size:2.4rem;
+
+color:#f4dca7;
+
+}
+
+.volume{
+
+margin-top:20px;
+
+font-family:'Cinzel',serif;
+
+font-size:1rem;
+
+letter-spacing:5px;
+
+color:#d8b56c;
+
+text-transform:uppercase;
+
+}
+
+/* Destellos */
+
+.sparkle{
+
+position:absolute;
+
+width:10px;
+height:10px;
+
+background:#fff6d8;
+
+border-radius:50%;
+
+box-shadow:
+0 0 12px #fff,
+0 0 22px #ffe7a6;
+
+animation:twinkle 3s infinite ease-in-out;
+
+}
+
+.s1{
+
+top:120px;
+left:110px;
+
+animation-delay:.2s;
+
+}
+
+.s2{
+
+top:210px;
+right:130px;
+
+animation-delay:1s;
+
+}
+
+.s3{
+
+bottom:170px;
+left:180px;
+
+animation-delay:2s;
+
+}
+
+.s4{
+
+bottom:130px;
+right:170px;
+
+animation-delay:1.5s;
+
+}
+
+@keyframes twinkle{
+
+0%,100%{
+
+opacity:.2;
+transform:scale(.6);
+
+}
+
+50%{
+
+opacity:1;
+transform:scale(1.4);
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="book">
+
+<div class="corner c1">❦</div>
+<div class="corner c2">❦</div>
+<div class="corner c3">❦</div>
+<div class="corner c4">❦</div>
+
+<div class="sparkle s1"></div>
+<div class="sparkle s2"></div>
+<div class="sparkle s3"></div>
+<div class="sparkle s4"></div>
+
+<div class="cover">
+
+<div class="line"></div>
+
+<div class="book-title">
+
+<strong>
+
+✦ DONDE SIEMPRE<br>
+
+VUELVE MI CORAZÓN ✦
+
+</strong>
+
+</div>
+
+<div class="subtitle">
+
+<strong>
+
+Un libro escrito con cada latido que me acerca a ti.
+
+</strong>
+
+</div>
+
+<div class="line"></div>
+
+<div class="dedication">
+
+Este libro no fue escrito con tinta, sino con todos los recuerdos, abrazos, sonrisas, silencios y sueños que nacen cada vez que tengo el privilegio de compartir un instante contigo. Cada página guarda un pedacito de mi corazón y cada capítulo existe para recordarte que, sin importar cuánto avance el tiempo, siempre habrá un lugar donde mi alma encontrará su hogar.
+
+</div>
+
+<div style="margin-top:45px;
+font-family:'Cinzel',serif;
+font-size:1.8rem;
+color:#f7df9e;
+letter-spacing:2px;">
+
+<strong>
+
+VALERIA PETRO VILLAZÓN
+
+</strong>
+
+</div>
+
+<div class="author">
+
+<strong>
+
+Escrito por tu niño
+
+</strong>
+
+</div>
+
+<div class="volume">
+
+<strong>
+
+PRIMER TOMO · JULIO 2026
+
+</strong>
+
+</div>
+
+  
+<style>
+
+/*==================================
+MARCAPÁGINAS
+==================================*/
+
+.bookmark{
+
+position:absolute;
+
+top:-8px;
+
+right:80px;
+
+width:105px;
+
+height:300px;
+
+background:linear-gradient(
+180deg,
+#7b1fa2 0%,
+#5d1484 55%,
+#40105c 100%
+);
+
+border-left:4px solid #e7c36a;
+
+border-right:4px solid #e7c36a;
+
+box-shadow:
+0 12px 28px rgba(0,0,0,.45);
+
+text-decoration:none;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+padding:20px 12px;
+
+transition:.4s;
+
+z-index:10;
+
+}
+
+.bookmark:hover{
+
+transform:translateY(12px);
+
+}
+
+.bookmark::after{
+
+content:"";
+
+position:absolute;
+
+bottom:-1px;
+
+left:0;
+
+width:100%;
+
+height:34px;
+
+background:#40105c;
+
+clip-path:polygon(0 0,50% 100%,100% 0);
+
+}
+
+.bookmark span{
+
+font-family:'Cinzel',serif;
+
+font-size:.85rem;
+
+letter-spacing:1.5px;
+
+text-align:center;
+
+line-height:1.8;
+
+color:#fff5dc;
+
+text-shadow:
+
+0 0 10px rgba(255,255,255,.25);
+
+}
+
+.bookmark small{
+
+margin-top:12px;
+
+font-size:1.8rem;
+
+}
+
+/*=============================
+FRASE FINAL
+=============================*/
+
+.footer-text{
+
+margin-top:75px;
+
+text-align:center;
+
+font-family:'Great Vibes',cursive;
+
+font-size:2.2rem;
+
+line-height:1.5;
+
+color:#f3d99d;
+
+text-shadow:
+0 0 12px rgba(255,220,150,.25);
+
+}
+
+</style>
+
+<a
+class="bookmark"
+target="_blank"
+href="https://j8753741-eng.github.io/Domingo-5-de-julio-del-2026/">
+
+<span>
+
+COMENZAR<br>
+
+A LEER
+
+</span>
+
+<small>📖</small>
+
+</a>
+
+<div class="footer-text">
+
+<strong>
+
+"Las historias más hermosas no empiezan con un 'Érase una vez'... empiezan el día en que dos corazones descubren que siempre estuvieron destinados a encontrarse."
+
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
